@@ -1,12 +1,8 @@
 // This is your Prisma schema file,
 // learn more about it in the docs: https://pris.ly/d/prisma-schema
 
-// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
-// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
-
 generator client {
   provider = "prisma-client-js"
-  output   = "../generated/prisma"
 }
 
 datasource db {
@@ -14,8 +10,13 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model User {
-  id   Int     @id @default(autoincrement())
-  name String
-  age  Int?
+model Restaurant {
+  id          Int      @id @default(autoincrement())
+  name        String
+  genre       String   // ジャンル (例: "ラーメン")
+  price_range String   // 価格帯 (例: "〜1000円")
+  address     String   @unique
+  latitude    Float    // 緯度
+  longitude   Float    // 経度
+  createdAt   DateTime @default(now())
 }

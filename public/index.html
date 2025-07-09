@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>日吉のお店マップ</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>日吉のお店マップ</h1>
+    </header>
+    <main>
+      <div class="controls">
+        <label for="price-filter">価格帯で絞り込み:</label>
+        <select id="price-filter">
+          <option value="all">すべて</option>
+          <option value="〜1000円">〜1000円</option>
+          <option value="1000円〜2000円">1000円〜2000円</option>
+        </select>
+        <button id="random-btn">ランダムに選ぶ</button>
+      </div>
+      <div id="map"></div>
+    </main>
+    <footer>
+      <p>実践のためのWebプログラミング</p>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

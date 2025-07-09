@@ -1,12 +1,14 @@
 {
-  "name": "webpro2025",
+  "name": "restaurant-map-map",
   "version": "1.0.0",
-  "description": "Webpro 2025",
+  "description": "A wep app to display restaurant on a map.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "tsx index.ts",
-    "db:dev": "prisma dev"
+    "start": "node index.js",
+    "dev": "node --watch index.js"
+  },
+  "prisma": {
+    "seed": "node prisma/seed.js"
   },
   "keywords": [],
   "author": "",
@@ -19,7 +21,6 @@
     "tsx": "^4.20.3"
   },
   "devDependencies": {
-    "@types/node": "^24.0.4",
-    "typescript": "^5.8.3"
+    "prisma": "^5.15.0"
   }
 }
