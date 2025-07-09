@@ -1,7 +1,7 @@
 {
-  "name": "restaurant-map-map",
+  "name": "restaurant-map-app",
   "version": "1.0.0",
-  "description": "A wep app to display restaurant on a map.",
+  "description": "A web app to display restaurants on a map.",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
@@ -14,11 +14,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@prisma/client": "^6.10.1",
-    "ejs": "^3.1.10",
-    "express": "^5.1.0",
-    "prisma": "^6.10.1",
-    "tsx": "^4.20.3"
+    "@prisma/client": "^5.15.0",
+    "express": "^4.19.2"
   },
   "devDependencies": {
     "prisma": "^5.15.0"
